@@ -1,5 +1,9 @@
-README.md
-readweb.py
-readwebML.py
-run_indextoWebPy0.bat
-run_indextoWebPy01.bat
+*
+!index.html
+!css/
+!css/*
+!README.md
+!.nojekyll
+
+.git/
+.git/*
