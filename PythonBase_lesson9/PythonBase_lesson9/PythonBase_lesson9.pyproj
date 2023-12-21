@@ -1,0 +1,95 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6665c2c2-bcd2-4768-9806-fc094afc1d61</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>a21_HW_fibonacci_decorator_only_odd_numbers.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonBase_lesson9</Name>
+    <RootNamespace>PythonBase_lesson9</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="a10_func_map.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a11_func_filter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a12_func_reduce.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a13_lru_cache.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a14_func_partial.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a15_func_product_chain.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a16_func_permutations_combinations.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a17_takewhile_dropwhile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a18_func_add_gt_neg.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a19_HW_partial_currying_function.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a1_example1_function.py" />
+    <Compile Include="a20_HW_square_natural_list_numbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a21_HW_fibonacci_decorator_only_odd_numbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a2_example1_func_lambda.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a3_closure_currying_function.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a4_closure_emulation_OOP.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a5_example_functional_programming.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a6_closure_error_startered.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a7_closure_error_for_example.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a8_decorator_example.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a9_factory_decorators.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

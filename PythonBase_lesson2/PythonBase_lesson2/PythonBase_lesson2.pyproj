@@ -1,0 +1,69 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0e112edb-e488-4d67-9670-8b833f17c46b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>a13_homework_classes_mro.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonBase_lesson2</Name>
+    <RootNamespace>PythonBase_lesson2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="a10_homework_transport.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a11_homework_classEditor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a12_homework_class_figure.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a13_homework_classes_mro.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a1_class_inheritence.py" />
+    <Compile Include="a2_class_inheritance_exampl2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a3_multiple_inheritance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a4_hierarchy_inheritance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a5_hierarhy_inheritance_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a6_inheritance_exampl1.pyw" />
+    <Compile Include="a7_inheritance_super.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a9_check_isinstance_issubclass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a8_super_hierarchy.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
