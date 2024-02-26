@@ -240,10 +240,19 @@ prediction = model.predict([new_x])[0]
                                      <hr>
                                         <div class="textbox">
                                                         <b>Stochastic Gradient Descent - SGD:</b><br>        <!-- colums (rows) every cells in this row name -->
+                                                        Stochastic Gradient Descent (SGD) is an optimization algorithm commonly used in training machine learning models, particularly in the context of neural networks. It is a variant of the Gradient Descent algorithm and is designed to handle large datasets more efficiently. <br><!-- list from rows in cells --> 
                                                         Суть работы оптимизатора &#39;sgd&#39; заключается в обновлении параметров (весов и смещений) в соответствии с градиентом функции потерь по отношению к этим параметрам. Различные вещные значения, известные как веса, связывают нейроны в сети. <br><!-- list from rows in cells --> 
                                                         Процесс обновления параметров происходит с использованием градиентного спуска: сначала вычисляется градиент функции потерь по каждому параметру, а затем каждый параметр обновляется путем вычитания определенного коэффициента, называемого шагом обучения, умноженного на соответствующий градиент. <br><!-- list from rows in cells --> 
                                                         В целом, оптимизатор &#39;sgd&#39; позволяет эффективно настраивать параметры нейронной сети, минимизируя функцию потерь в процессе обучения. <br><!-- list from rows in cells --> 
                                                         <b>Mean_squared_error:</b><br>        <!-- colums (rows) every cells in this row name -->
+                                                        Mean squared error (MSE) is a widely used metric for evaluating the performance of a regression model. It measures the average of the squares of the errors or the differences between actual and predicted values in the model&#39;s predictions. <br><!-- list from rows in cells --> 
+                                                        The formula for calculating the mean squared error is: <br><!-- list from rows in cells --> 
+                                                        MSE = (1/n) * Σ(actual - predicted)^2 <br><!-- list from rows in cells --> 
+                                                        Where: <br><!-- list from rows in cells --> 
+                                                        n is the number of data points <br><!-- list from rows in cells --> 
+                                                        Σ denotes the sum over all data points <br><!-- list from rows in cells --> 
+                                                        actual represents the actual values of the target variable <br><!-- list from rows in cells --> 
+                                                        predicted represents the predicted values from the regression model <br><!-- list from rows in cells --> 
                                                         Функция потерь &#39;mean_squared_error&#39; (среднеквадратичная ошибка) вычисляется как средний квадрат разности между истинными значениями и прогнозируемыми значениями модели. <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
