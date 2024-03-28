@@ -391,23 +391,19 @@ Week 4 C2 &#34;Multiclass Classifications&#34;:
     Week 1 C3 &#34;Sentiment in text&#34;:<br>
       - C3_W1_Lab_1_tokenize_basic  |  &#34;.fit_on_texts(sentences), .word_index&#34;<br>
       - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), <br>
-      pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39;,  <br>
-      padding=&#39;pre&#39; &#34; <br>
+      pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; <br>
       - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;<br>
       - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),<br>
       remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;<br>
     Week 2 C3 &#34;Word Embeddings&#34;:<br>
       - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)<br>
-      model.fit(padded, training_labels_final, validation_data=(testing_padded, testing_labels_final))<br>
       embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;<br>
       - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),<br>
       files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;<br>
       - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, <br>
       6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;<br>
       - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), <br>
-      def parse_data_from_file(csv.reader()), def train_val_split(), def fit_tokenizer(), <br>
-      def seq_and_pad(), def tokenize_labels(), def create_model(), .set_seed(123), .Embedding(), <br>
-      .GlobalAveragePooling1D()&#34;<br>
+      def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;<br>
     Week 3 C3 &#34;Assessments Overdue&#34;:<br>
       - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;<br>
       - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), <br>
@@ -435,23 +431,19 @@ Week 4 C2 &#34;Multiclass Classifications&#34;:
 Week 1 C3 &#34;Sentiment in text&#34;:
   - C3_W1_Lab_1_tokenize_basic  |  &#34;.fit_on_texts(sentences), .word_index&#34;
   - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), 
-  pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39;,  
-  padding=&#39;pre&#39; &#34; 
+  pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; 
   - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;
   - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),
   remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
 Week 2 C3 &#34;Word Embeddings&#34;:
   - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)
-  model.fit(padded, training_labels_final, validation_data=(testing_padded, testing_labels_final))
   embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
   - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),
   files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
   - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 
   6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
   - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), 
-  def parse_data_from_file(csv.reader()), def train_val_split(), def fit_tokenizer(), 
-  def seq_and_pad(), def tokenize_labels(), def create_model(), .set_seed(123), .Embedding(), 
-  .GlobalAveragePooling1D()&#34;
+  def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
 Week 3 C3 &#34;Assessments Overdue&#34;:
   - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;
   - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), 
@@ -475,23 +467,19 @@ Week 3 C3 &#34;Assessments Overdue&#34;:
 Week 1 C3 &#34;Sentiment in text&#34;:
   - C3_W1_Lab_1_tokenize_basic  |  &#34;.fit_on_texts(sentences), .word_index&#34;
   - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), 
-  pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39;,  
-  padding=&#39;pre&#39; &#34; 
+  pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; 
   - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;
   - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),
   remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
 Week 2 C3 &#34;Word Embeddings&#34;:
   - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)
-  model.fit(padded, training_labels_final, validation_data=(testing_padded, testing_labels_final))
   embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
   - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),
   files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
   - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 
   6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
   - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), 
-  def parse_data_from_file(csv.reader()), def train_val_split(), def fit_tokenizer(), 
-  def seq_and_pad(), def tokenize_labels(), def create_model(), .set_seed(123), .Embedding(), 
-  .GlobalAveragePooling1D()&#34;
+  def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
 Week 3 C3 &#34;Assessments Overdue&#34;:
   - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;
   - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), 
@@ -518,23 +506,19 @@ Week 3 C3 &#34;Assessments Overdue&#34;:
 Week 1 C3 &#34;Sentiment in text&#34;:
   - C3_W1_Lab_1_tokenize_basic  |  &#34;.fit_on_texts(sentences), .word_index&#34;
   - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), 
-  pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39;,  
-  padding=&#39;pre&#39; &#34; 
+  pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; 
   - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;
   - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),
   remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
 Week 2 C3 &#34;Word Embeddings&#34;:
   - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)
-  model.fit(padded, training_labels_final, validation_data=(testing_padded, testing_labels_final))
   embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
   - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),
   files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
   - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 
   6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
   - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), 
-  def parse_data_from_file(csv.reader()), def train_val_split(), def fit_tokenizer(), 
-  def seq_and_pad(), def tokenize_labels(), def create_model(), .set_seed(123), .Embedding(), 
-  .GlobalAveragePooling1D()&#34;
+  def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
 Week 3 C3 &#34;Assessments Overdue&#34;:
   - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;
   - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), 
@@ -565,6 +549,11 @@ Week 3 C3 &#34;Assessments Overdue&#34;:
       <div class='text'> 
     !_!!<br>
     ----------------------------------------------------------------------------------------<br>
+    Week 4 C3 &#34;Sequence models and literature&#34;:<br>
+      - <br>
+      - <br>
+      - <br>
+      - <br>
       </div>
       </div>
     </div>
@@ -575,12 +564,22 @@ Week 3 C3 &#34;Assessments Overdue&#34;:
 <!-- <pre>
 <code class="language-python hljs">
 ----------------------------------------------------------------------------------------
+Week 4 C3 &#34;Sequence models and literature&#34;:
+  - 
+  - 
+  - 
+  - 
 </code>
 </pre>
  -->
 <pre>
 <code class="language-python hljs"><small>
 ----------------------------------------------------------------------------------------
+Week 4 C3 &#34;Sequence models and literature&#34;:
+  - 
+  - 
+  - 
+  - 
 </small></code>
 </pre>
 <!-- <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" > </link>
@@ -590,6 +589,11 @@ Week 3 C3 &#34;Assessments Overdue&#34;:
   <pre>
     <code class="language-python hljs">
 ----------------------------------------------------------------------------------------
+Week 4 C3 &#34;Sequence models and literature&#34;:
+  - 
+  - 
+  - 
+  - 
 </code>
   </pre>
 </h5> -->
