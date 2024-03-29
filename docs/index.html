@@ -393,29 +393,20 @@ Week 4 C2 &#34;Multiclass Classifications&#34;:
       - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), <br>
       pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; <br>
       - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;<br>
-      - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),<br>
-      remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;<br>
+      - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;), remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;<br>
     Week 2 C3 &#34;Word Embeddings&#34;:<br>
-      - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)<br>
-      embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;<br>
-      - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),<br>
-      files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;<br>
-      - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, <br>
-      6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;<br>
-      - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), <br>
-      def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;<br>
+      - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length), embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;<br>
+      - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(), files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;<br>
+      - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;<br>
+      - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def_remove_stopwords(), def_parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;<br>
     Week 3 C3 &#34;Assessments Overdue&#34;:<br>
       - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;<br>
-      - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), <br>
-      return_sequences=True), .Bidirectional(LSTM(32))&#34;<br>
-      - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;),<br>
-      .GlobalMaxPooling1D() &#34;<br>
-      - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), <br>
-      .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;<br>
+      - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), return_sequences=True), .Bidirectional(LSTM(32))&#34;<br>
+      - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D() &#34;<br>
+      - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;<br>
       - C3_W3_Lab_5_sarcasm_with_bi_LSTM  |  &#34;.Bidirectional(tf.keras.layers.LSTM(lstm_dim))&#34;<br>
       - C3_W3_Lab_6_sarcasm_with_1D_conv  |  &#34;.Conv1D(128, 5, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;<br>
-      - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset,<br>
-      linregress(), weights=[embeddings_matrix],  Best practice&#34;<br>
+      - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset, linregress(), weights=[embeddings_matrix],  Best practice&#34;<br>
       </div>
       </div>
     </div>
@@ -433,29 +424,20 @@ Week 1 C3 &#34;Sentiment in text&#34;:
   - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), 
   pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; 
   - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;
-  - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),
-  remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
+  - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;), remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
 Week 2 C3 &#34;Word Embeddings&#34;:
-  - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)
-  embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
-  - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),
-  files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
-  - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 
-  6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
-  - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), 
-  def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
+  - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length), embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
+  - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(), files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
+  - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
+  - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def_remove_stopwords(), def_parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
 Week 3 C3 &#34;Assessments Overdue&#34;:
   - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;
-  - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), 
-  return_sequences=True), .Bidirectional(LSTM(32))&#34;
-  - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;),
-  .GlobalMaxPooling1D() &#34;
-  - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), 
-  .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
+  - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), return_sequences=True), .Bidirectional(LSTM(32))&#34;
+  - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D() &#34;
+  - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
   - C3_W3_Lab_5_sarcasm_with_bi_LSTM  |  &#34;.Bidirectional(tf.keras.layers.LSTM(lstm_dim))&#34;
   - C3_W3_Lab_6_sarcasm_with_1D_conv  |  &#34;.Conv1D(128, 5, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
-  - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset,
-  linregress(), weights=[embeddings_matrix],  Best practice&#34;
+  - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset, linregress(), weights=[embeddings_matrix],  Best practice&#34;
 </code>
 </pre>
  -->
@@ -469,29 +451,20 @@ Week 1 C3 &#34;Sentiment in text&#34;:
   - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), 
   pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; 
   - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;
-  - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),
-  remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
+  - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;), remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
 Week 2 C3 &#34;Word Embeddings&#34;:
-  - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)
-  embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
-  - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),
-  files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
-  - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 
-  6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
-  - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), 
-  def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
+  - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length), embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
+  - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(), files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
+  - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
+  - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def_remove_stopwords(), def_parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
 Week 3 C3 &#34;Assessments Overdue&#34;:
   - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;
-  - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), 
-  return_sequences=True), .Bidirectional(LSTM(32))&#34;
-  - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;),
-  .GlobalMaxPooling1D() &#34;
-  - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), 
-  .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
+  - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), return_sequences=True), .Bidirectional(LSTM(32))&#34;
+  - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D() &#34;
+  - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
   - C3_W3_Lab_5_sarcasm_with_bi_LSTM  |  &#34;.Bidirectional(tf.keras.layers.LSTM(lstm_dim))&#34;
   - C3_W3_Lab_6_sarcasm_with_1D_conv  |  &#34;.Conv1D(128, 5, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
-  - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset,
-  linregress(), weights=[embeddings_matrix],  Best practice&#34;
+  - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset, linregress(), weights=[embeddings_matrix],  Best practice&#34;
 </small></code>
 </pre>
 <!-- <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" > </link>
@@ -508,29 +481,20 @@ Week 1 C3 &#34;Sentiment in text&#34;:
   - C3_W1_Lab_2_sequences_basic  |   &#34;oov_token=&#39;&lt;OOV&gt;&#39;, .texts_to_sequences(sentences), 
   pad_sequences(sequences, maxlen=5), truncating=&#39;post&#39;,  padding=&#39;post&#39;,  truncating=&#39;pre&#39; &#34; 
   - C3_W1_Lab_3_sarcasm_Kaggle  |  &#34;with open(&#39;./sarcasm.json&#39;, &#39;r&#39;) as f:, datastore = json.load(f)&#34;
-  - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;),
-  remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
+  - C3W1_Assignment_(BBC News)  |   &#34;csv.reader(csvfile, delimiter=&#39;,&#39;), remove_stopwords(&#39;I am about&#39;), tokenize_labels()&#34;
 Week 2 C3 &#34;Word Embeddings&#34;:
-  - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length)
-  embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
-  - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(),
-  files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
-  - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 
-  6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
-  - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def remove_stopwords(), 
-  def parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
+  - C3_W2_Lab_1_imdb  |   &#34;.Embedding(vocab_size, embedding_dim, input_length=max_length), embedding_layer.get_weights()[0], files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
+  - C3_W2_Lab_2_sarcasm_classifier  |  &#34;json.load(f), .GlobalAveragePooling1D(), files.download(&#39;vecs.tsv&#39;), files.download(&#39;meta.tsv&#39;)&#34;
+  - C3_W2_Lab_3_imdb_subwords  |  &#34;tokenizer_plaintext, tokenizer_subwords, 6307 ----&gt; Ten, 2327 ----&gt; sor,train_data, test_data = imdb_subwords[&#39;train&#39;], db_subwords[&#39;test&#39;]&#34;
+  - C3W2_Assignment (Diving deeper into the BBC News archive)  |   &#34;def_remove_stopwords(), def_parse_data_from_file(csv.reader()), .set_seed(123), .GlobalAveragePooling1D()&#34;
 Week 3 C3 &#34;Assessments Overdue&#34;:
   - C3_W3_Lab_1_single_layer_LSTM(subword)  |  &#34;.Embedding(), .Bidirectional(LSTM(32)), &#34;
-  - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), 
-  return_sequences=True), .Bidirectional(LSTM(32))&#34;
-  - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;),
-  .GlobalMaxPooling1D() &#34;
-  - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), 
-  .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
+  - C3_W3_Lab_2_multiple_layer_LSTM(subword)  | &#34;.Bidirectional(LSTM(32), return_sequences=True), .Bidirectional(LSTM(32))&#34;
+  - C3_W3_Lab_3_Conv1D  |  &#34;.Embedding(), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D() &#34;
+  - C3_W3_Lab_4_imdb_reviews_with_GRU_LSTM_Conv1D  |  &#34;.Flatten(), .Bidirectional(.LSTM(32)), .Bidirectional(.GRU(32)), .Conv1D(filters, kernel_size, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
   - C3_W3_Lab_5_sarcasm_with_bi_LSTM  |  &#34;.Bidirectional(tf.keras.layers.LSTM(lstm_dim))&#34;
   - C3_W3_Lab_6_sarcasm_with_1D_conv  |  &#34;.Conv1D(128, 5, activation=&#39;relu&#39;), .GlobalMaxPooling1D()&#34;
-  - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset,
-  linregress(), weights=[embeddings_matrix],  Best practice&#34;
+  - C3W3_Assignment_Exploring Overfitting in NLP(Sentiment140 dataset)  |  &#34;only 10% dataset, linregress(), weights=[embeddings_matrix],  Best practice&#34;
 </code>
   </pre>
 </h5> -->
@@ -550,11 +514,9 @@ Week 3 C3 &#34;Assessments Overdue&#34;:
     !_!!<br>
     ----------------------------------------------------------------------------------------<br>
     Week 4 C3 &#34;Sequence models and literature&#34;:<br>
-      - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels)<br>
-      model.add(Bidirectional(LSTM(20))),  seed_text = &#39;Laurence went to Dublin&#39;&#34;<br>
-      - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted],<br>
-       predicted = np.argsort(probabilities)[0][-choice]&#34;<br>
-      - C3_W4_Lab_3_to generating text using a character-based RNN<br>
+      - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels), model.add(Bidirectional(LSTM(20))),  seed_text=&#39;Laurence went to Dublin&#39;&#34;<br>
+      - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted], predicted=np.argsort(probabilities)[0][-choice]&#34;<br>
+      - C3_W4_Lab_3_to generating text Shakespeare using a character-based RNN  |  &#34;that uses character-based prediction, &#34;<br>
       - <br>
       </div>
       </div>
@@ -567,11 +529,9 @@ Week 3 C3 &#34;Assessments Overdue&#34;:
 <code class="language-python hljs">
 ----------------------------------------------------------------------------------------
 Week 4 C3 &#34;Sequence models and literature&#34;:
-  - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels)
-  model.add(Bidirectional(LSTM(20))),  seed_text = &#39;Laurence went to Dublin&#39;&#34;
-  - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted],
-   predicted = np.argsort(probabilities)[0][-choice]&#34;
-  - C3_W4_Lab_3_to generating text using a character-based RNN
+  - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels), model.add(Bidirectional(LSTM(20))),  seed_text=&#39;Laurence went to Dublin&#39;&#34;
+  - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted], predicted=np.argsort(probabilities)[0][-choice]&#34;
+  - C3_W4_Lab_3_to generating text Shakespeare using a character-based RNN  |  &#34;that uses character-based prediction, &#34;
   - 
 </code>
 </pre>
@@ -580,11 +540,9 @@ Week 4 C3 &#34;Sequence models and literature&#34;:
 <code class="language-python hljs"><small>
 ----------------------------------------------------------------------------------------
 Week 4 C3 &#34;Sequence models and literature&#34;:
-  - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels)
-  model.add(Bidirectional(LSTM(20))),  seed_text = &#39;Laurence went to Dublin&#39;&#34;
-  - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted],
-   predicted = np.argsort(probabilities)[0][-choice]&#34;
-  - C3_W4_Lab_3_to generating text using a character-based RNN
+  - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels), model.add(Bidirectional(LSTM(20))),  seed_text=&#39;Laurence went to Dublin&#39;&#34;
+  - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted], predicted=np.argsort(probabilities)[0][-choice]&#34;
+  - C3_W4_Lab_3_to generating text Shakespeare using a character-based RNN  |  &#34;that uses character-based prediction, &#34;
   - 
 </small></code>
 </pre>
@@ -596,11 +554,9 @@ Week 4 C3 &#34;Sequence models and literature&#34;:
     <code class="language-python hljs">
 ----------------------------------------------------------------------------------------
 Week 4 C3 &#34;Sequence models and literature&#34;:
-  - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels)
-  model.add(Bidirectional(LSTM(20))),  seed_text = &#39;Laurence went to Dublin&#39;&#34;
-  - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted],
-   predicted = np.argsort(probabilities)[0][-choice]&#34;
-  - C3_W4_Lab_3_to generating text using a character-based RNN
+  - C3_W4_Lab_1_Generating Text_NN  |  &#34;Dense(total_words), .to_categorical(labels), model.add(Bidirectional(LSTM(20))),  seed_text=&#39;Laurence went to Dublin&#39;&#34;
+  - C3_W4_Lab_2_irish_lyrics_1,692_sentences  |  &#34;new_word=tokenizer.index_word[predicted], predicted=np.argsort(probabilities)[0][-choice]&#34;
+  - C3_W4_Lab_3_to generating text Shakespeare using a character-based RNN  |  &#34;that uses character-based prediction, &#34;
   - 
 </code>
   </pre>
@@ -13375,6 +13331,17 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
                                                         Итак, ответом будет Y = 2*X - 1. И каждый Y, который вы видите, — это соответствующий X, умноженный на 2, и минус 1. Если вы догадались до этого — молодцы, но как вы это сделали? Как вы думаете, каким образом можно было это определить? Возможно, вы можете увидеть, что Y увеличивается на 2 всякий раз, когда X увеличивается на 1. Поэтому похоже, что Y равен 2*Х, плюс или минус что-то. Затем, когда вы увидели, что X=0, а Y= -1, то подумали, эй, это дополнительное &#34;что-то&#34; равно -1, и тогда ответом будет Y = 2*X - 1. Вы, вероятно, проверили это на паре других значений и убедились, что эта формула подходит. Поздравляю, вы только что выполнили в своей голове то, что является основой машинного обучения. Давайте теперь взглянем на это в коде. Вот наша первая строчка кода. Это код написан с помощью Python и TensorFlow, и API для TensorFlow под названием keras. Keras позволяет очень легко конфигурировать нейронные сети. Нейронная сеть представляет собой набор функций, способный заучивать шаблоны. Не волнуйтесь, если здесь прозвучало много новых понятий. Они довольно быстро станут ясны по мере работы с ними. Простейшая из возможных нейронная сеть состоит всего лишь из одного нейрона, и именно её создаёт данная строчка кода. В keras объект Dense (&#34;плотный&#34;) используется для определения слоя связанных нейронов. Здесь есть только один Dense. Поэтому здесь только один слой, и только один элемент (unit) в нём, то есть, это единственный нейрон. Слои, идущие друг за другом, задаются последовательно, отсюда слово Sequential (последовательный). Но как я уже сказал, сейчас здесь только один слой. И у вас есть единственный нейрон. В первую очередь, вы определяете форму того, что будет входом в нейронную сеть, и в нашем случае это единственный слой, и видно, что наша входная форма очень проста — лишь одно значение. Вы, возможно, уже слышали, что для машинного обучения вам нужно знать и использовать много алгебры, математического анализа, теории вероятностей и т.п. Разбираться во всём этом очень полезно, когда вам необходимо оптимизировать ваши модели, но хорошей новостью на данный момент будет то, что в TensorFlow и keras эта математика уже реализована за вас в их функциях. Всё же, есть два вида функций, о которых вам стоит знать — это функции потерь (loss functions) и оптимизаторы (optimizers). Данный код задаёт их. Я предпочитаю думать об этом следующим образом. Нейронная сеть понятия не имеет о взаимосвязи между X и Y, поэтому делает предположение. Скажем, она предполагает, что Y = 10*X - 10. Затем она использует известные ей данные (это набор из пар X и Y, которые мы уже видели), чтобы измерить, насколько хорошим или плохим было предположение. Функция потерь (loss function) как раз это и измеряет, и затем передает данные оптимизатору, который выводит следующее предположение. Таким образом, оптимизатор определяет, насколько хорошо или насколько плохо было сделано предположение, используя данные из функции потерь (loss function). Далее логика в том, что каждое следующее предположение должно быть лучше предыдущего. Так как предположения становятся лучше и лучше, а точность приближается к 100%, то используется термин &#34;сходимость&#34;. В нашем случае, потерей (loss) будет среднеквадратическая ошибка (mean_squared_error), а оптимизатором является SGD, т.е., стохастический градиентный спуск [Stochastic Gradient Descent - прим.] Если вы хотите узнать больше об этих конкретных функциях, а также о других опциях, которые могут лучше подойти в других сценариях, — ознакомьтесь с документацией по TensorFlow. Но в данный момент мы собираемся использовать только эти. Наш следующий шаг заключается в представлении известных данных. Это X и Y, которые вы уже видели. np.array использует библиотеку Python под названием NumPy, которая существенно упрощает представление данных — и в частности, списков. Здесь вы видите, что у нас есть отдельный список для X, и еще один для Y. Обучение происходит внутри функции fit. Здесь мы просим модель определить соответствие между значениями X и Y. Параметр epochs=500 означает, что алгоритм пройдет цикл обучения 500 раз. Этот цикл обучения соответствует тому, что мы только что описали. Сделать предположение, измерить, насколько хороши или плохи эти предположения с помощью функции потерь (loss function), затем использовать оптимизатор и данные, чтобы сделать следующее предположение, и повторить всё снова. Когда модель закончила обучение, она затем сможет выдать вам значения, используя метод predict (предсказать). Т.к. она никогда ранее не видела значения 10, то как вы думаете, что она вам вернет, если вы ей передадите 10? Вы можете подумать, что она вернет 19, т.к. все Y ведь соответствуют формуле 2*X-1, и вы думаете, что ответ должен быть 19. Но когда вы попробуете это у себя в workbook, вы увидите, что она вернет значение, очень близкое к 19, но не точно 19. Как вы думаете, почему так могло бы произойти? На то есть две основные причины. Первая — это то, что вы обучали сеть, используя очень мало данных. У нас есть всего шесть точек. Эти шесть точек линейны, но нет гарантии, что для каждого X соответствием будет Y= 2*X - 1. Существует очень высокая вероятность того, что Y = 19 для X = 10, но нейронная сеть не уверена. Поэтому она определит правдоподобное значение для Y. И в этом — вторая основная причина. При использовании нейронных сетей, поскольку они пытаются определить ответы на всё, они имеют дело с вероятностью. Вы увидите достаточно много такого, и вам нужно будет подстраивать то, как вы обрабатываете ответы. Имейте это в виду, работая с кодом. Хорошо, достаточно теории. Теперь давайте попрактикуемся, и напишем код, который мы только что видели, и выполним его. <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -13449,6 +13416,52 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small>import tensorflow as tf</small>
+<small>import numpy as np</small>
+<small>from tensorflow import keras</small>
+<small></small>
+<small>print(tf.__version__)</small>
+<small></small>
+<small># Build a simple Sequential model</small>
+<small>model = keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])</small>
+<small></small>
+<small># Complite the model</small>
+<small>model.compile(optimizer=&#39;sgd&#39;, loss=&#39;mean_squared_error&#39;)</small>
+<small></small>
+<small># Declare model inputs and outputs for training</small>
+<small>xs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], dtype=float)</small>
+<small>ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)</small>
+<small></small>
+<small># Train the model</small>
+<small>model.fit(xs, ys, epochs=500)</small>
+<small></small>
+<small># Make a predition</small>
+<small>print(model.predict([10.0]))</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>5(w1)-Intake Survey  (Вступительный опрос)</a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
                                         <div class="textbox">
@@ -13512,6 +13525,17 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
                                                         Теперь я собираюсь скомпилировать нейронную сеть, используя функцию потерь и оптимизатор. Помните, что они помогают нейронной сети сделать предположение о шаблоне, измерить, насколько хорошо или плохо построено предположение — прежде чем сделать новую попытку в следующей итерации, постепенно становясь точнее. Вот то место, где мы подаем данные, где у нас есть известные значения X и соответствующие им значения Y, и мы хотим определить связь между ними. Мы их передаём в виде массивов NumPy. В этом месте вы выполняем обучение, и машина изучает шаблоны. Мы просим модель подогнать X к Y и она будет пробовать сделать это на протяжении 500 итераций/эпох. На каждой итерации делается предположение, и применяется функция потерь для выяснения, насколько хорошо или плохо оно было сделано, а затем используется оптимизатор, чтобы построить новое предположение. Когда код работает, следите за ошибкой справа. Помните, сеть знает правильный ответ для значений, которые мы ей скормили, поэтому она может сравнить с ним свое предположение. Вначале ошибка является довольно большой, т.е. предположение не такое уж и хорошее. Но от эпохи к эпохе ошибка становится все меньше и меньше. Так что нейронная сеть становится ближе к выявлению взаимосвязи. К тому моменту, когда истекут 500 эпох, ошибка станет очень и очень маленькой, что означает, что для этих данных сеть подошла очень близко к выявлению взаимосвязи между X и Y. Так давайте же посмотрим, что произойдет, если мы дадим ей такой X, которого она не видела ранее. В данном случае, 10. Как вы думаете, каким будет ответ? Как вы можете видеть, это 18.98. Очень близко к 19, но не точно 19. Помните ли вы причины, почему это так? Чтобы увидеть ответ, снова просмотрите видео предыдущего урока. <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -13587,6 +13611,53 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small>import tensorflow as tf</small>
+<small>import numpy as np</small>
+<small>from tensorflow import keras</small>
+<small></small>
+<small>print(tf.__version__)</small>
+<small></small>
+<small># Build a simple Sequential model</small>
+<small>model = keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])</small>
+<small></small>
+<small># Complite the model</small>
+<small>model.compile(optimizer=&#39;sgd&#39;, loss=&#39;mean_squared_error&#39;)</small>
+<small></small>
+<small># Declare model inputs and outputs for training</small>
+<small>xs = np.array([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0], dtype=float)</small>
+<small>ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)</small>
+<small></small>
+<small># Train the model</small>
+<small>model.fit(xs, ys, epochs=500)</small>
+<small></small>
+<small># Make a predition</small>
+<small>print(model.predict([10.0]))</small>
+<small></small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>9(w1)-video5: </a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
                                         <div class="textbox">
@@ -13846,6 +13917,17 @@ Housing Prices (video7)
                                                         (Если все прошло так, как ожидалось, вы должны увидеть значение прогноза, очень близкое к 4. **Если нет, попробуйте изменить свой код перед отправкой задания.** Обратите внимание, что вы можете поиграть со значением `new_x`, чтобы получить разные прогнозы. В целом вы должны увидеть, что сеть смогла изучить линейную зависимость между `x` и `y`, поэтому, если вы используете значение 8,0, вы должны получить прогноз, близкий к 4,5 и так далее.) <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -13942,6 +14024,74 @@ Housing Prices (video7)
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># grader-required-cell</small>
+<small></small>
+<small>import tensorflow as tf</small>
+<small>import numpy as np</small>
+<small></small>
+<small># grader-required-cell</small>
+<small></small>
+<small># GRADED FUNCTION: house_model</small>
+<small>def house_model():</small>
+<small>    ### START CODE HERE</small>
+<small>    </small>
+<small>    # Define input and output tensors with the values for houses with 1 up to 6 bedrooms</small>
+<small>    # Hint: Remember to explictly set the dtype as float</small>
+<small>    xs = np.array([1.0, 2.0, 3.0, 4.0,       5.0,      6.0], dtype=float)</small>
+<small>    ys = np.array([1.0, 1.5, 2.0, (3.5-0.5), (4.0-1), (4.5-1.2)], dtype=float)</small>
+<small>    </small>
+<small>    # Define your model (should be a model with 1 dense layer and 1 unit)</small>
+<small>    # Note: you can use `tf.keras` instead of `keras`</small>
+<small>    model = tf.keras.Sequential([tf.keras.layers.Dense(units=1, input_shape=[1])])</small>
+<small>    </small>
+<small>    # Compile your model</small>
+<small>    # Set the optimizer to Stochastic Gradient Descent</small>
+<small>    # and use Mean Squared Error as the loss function</small>
+<small>    model.compile(optimizer=&#39;sgd&#39;, loss=&#39;mean_squared_error&#39;)</small>
+<small>    </small>
+<small>    # Train your model for 1000 epochs by feeding the i/o tensors</small>
+<small>    model.fit(xs, ys, shuffle=True, epochs=1000)</small>
+<small>    </small>
+<small>    ### END CODE HERE</small>
+<small>    return model</small>
+<small></small>
+<small># grader-required-cell</small>
+<small></small>
+<small># Get your trained model</small>
+<small>model = house_model()</small>
+<small></small>
+<small># grader-required-cell</small>
+<small></small>
+<small>new_x = 7.0</small>
+<small>prediction = model.predict([new_x])[0]</small>
+<small>print(prediction)</small>
+<small></small>
+<small>[4.0094547]</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>16(w1) Week 1 Resources
 </a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
@@ -14036,6 +14186,17 @@ Housing Prices (video7)
                                                         https://www.youtube.com/watch?v=fXOsFF95ifk <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -14096,6 +14257,38 @@ Housing Prices (video7)
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small>import tensorflow as tf</small>
+<small>from tensorflow import keras</small>
+<small></small>
+<small>model = keras.Sequential([</small>
+<small>    keras.layers.Flatten(input_shape=(28, 28)),</small>
+<small>    keras.layers.Dense(128, activation=tf.nn.relu),</small>
+<small>    keras.layers.Dense(10, activation=tf.nn.softmax)</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>7(w2)-See how it&#39;s done</a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
                                         <div class="textbox">
@@ -14126,6 +14319,17 @@ Walk through a Notebook for computer vision</a><a> <small>(15.MLg_1c)</small></a
                                                         # LOAD DATASET <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -14208,8 +14412,73 @@ Walk through a Notebook for computer vision</a><a> <small>(15.MLg_1c)</small></a
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># ------------------------</small>
+<small># LOAD DATASET</small>
+<small># ------------------------</small>
+<small>import tensorflow as tf</small>
+<small># print(tf.__version__)</small>
+<small></small>
+<small># Load the Fashion MNIST dataset</small>
+<small>fmnist = tf.keras.datasets.fashion_mnist</small>
+<small># Load the training and split of the Fashion MNIST dataset</small>
+<small>(training_images, training_labels), (test_images, test_labels) = fmnist.load_data()</small>
+<small></small>
+<small># ------------------------</small>
+<small># vISUALISATE DATA</small>
+<small># ------------------------</small>
+<small>import numpy as np</small>
+<small>import matplotlib.pyplot as plt</small>
+<small></small>
+<small># You can put between 0 to 59999 here</small>
+<small># index = 0</small>
+<small>index = 42</small>
+<small># Set number of characters per row when printing</small>
+<small>np.set_printoptions(linewidth=320)</small>
+<small># Print the label and image</small>
+<small>print(f&#39;LABEL: {training_labels[index]}&#39;)</small>
+<small>print(f&#39;\nIMAGE PIXEL ARRAY:\n {training_images[index]}&#39;)</small>
+<small># Visualize the image</small>
+<small>plt.imshow(training_images[index], cmap=&#39;Greys&#39;)</small>
+<small></small>
+<small></small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -14302,8 +14571,83 @@ Walk through a Notebook for computer vision</a><a> <small>(15.MLg_1c)</small></a
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># ------------------------</small>
+<small># CREATE MODEL</small>
+<small># ------------------------</small>
+<small># Normalize the pixel vlues of the train and test images</small>
+<small>training_images = training_images / 255</small>
+<small>test_images = test_images / 255</small>
+<small></small>
+<small># Build the classification model</small>
+<small>model = tf.keras.models.Sequential([tf.keras.layers.Flatten(),</small>
+<small>                                    tf.keras.layers.Dense(128, activation=tf.nn.relu),</small>
+<small>                                    tf.keras.layers.Dense(10,activation=tf.nn.softmax)])</small>
+<small></small>
+<small># ------------------------</small>
+<small># HOW WORKS SOFTMAX</small>
+<small># ------------------------</small>
+<small># Softmax берет список значений и масштабирует их так, чтобы сумма всех элементов была равна 1. </small>
+<small># Применительно к выходным данным модели вы можете думать о масштабированных значениях как о вероятности </small>
+<small># для этого класса. Например, в вашей модели классификации, которая имеет 10 единиц в выходном плотном слое,</small>
+<small>#  самое высокое значение при индексе = 4 означает, что модель наиболее уверена в том, что входное</small>
+<small>#   изображение одежды является пальто. Если он имеет индекс = 5, то это сандалии и так далее. </small>
+<small>#   См. приведенный ниже блок сокращенного кода, демонстрирующий эти концепции. Вы также можете </small>
+<small>#   посмотреть эту лекцию, если хотите узнать больше о функции Softmax и о том, как вычисляются значения.</small>
+<small></small>
+<small># Declare sample imputs and convert to a tensor</small>
+<small>inputs = np.array([[1.0, 3.0, 4.0, 2.0]])</small>
+<small>inputs = tf.convert_to_tensor(inputs)</small>
+<small>print(f&#39;input to softmax function: {inputs.numpy()}&#39;)</small>
+<small></small>
+<small># Feed the inputs to a softmax activation function</small>
+<small>outputs = tf.keras.activations.softmax(inputs)</small>
+<small>print(f&#39;output of softmax functiion: {outputs.numpy()}&#39;)</small>
+<small></small>
+<small># Get the sum of all values after the softmax</small>
+<small>sum = tf.reduce_sum(outputs)</small>
+<small>print(f&#39;sum of outputs: {sum}&#39;)</small>
+<small></small>
+<small># Get the index with highest value</small>
+<small>prediction = np.argmax(outputs)</small>
+<small>print(f&#39;class with highest probability: {prediction}&#39;)</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -14373,6 +14717,47 @@ Walk through a Notebook for computer vision</a><a> <small>(15.MLg_1c)</small></a
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small>model.compile(optimizer = tf.optimizers.Adam(),</small>
+<small>              loss = &#39;sparse_categorical_crossentropy&#39;,</small>
+<small>              metrics=[&#39;accuracy&#39;])</small>
+<small></small>
+<small># Evaluate the model on unseen data</small>
+<small>model.evaluate(test_images, test_labels)</small>
+<small></small>
+<small># ++++++++++++++++++++++++++++++++++++</small>
+<small>class myCallback(tf.keras.callbacks.Callback):</small>
+<small>  def on_epoch_end(self, epoch, logs={}):</small>
+<small>    if(logs.get(&#39;accuracy&#39;) &gt;= 0.6): # Experiment with changing this value</small>
+<small>      print(&#34;\nReached 60% accuracy so cancelling training!&#34;)</small>
+<small>      self.model.stop_training = True</small>
+<small></small>
+<small>callbacks = myCallback()</small>
+<small>model.fit(training_images, training_labels, epochs=5, callbacks=[callbacks])</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>10(w2)-video6: 
 Using Callbacks to control training</a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
@@ -14564,6 +14949,17 @@ Implementing convolutional layers</a><a> <small>(15.MLg_1c)</small></a></h6></sp
                                                         https://bit.ly/2UGa7uH <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -14628,6 +15024,42 @@ Implementing convolutional layers</a><a> <small>(15.MLg_1c)</small></a></h6></sp
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># next code</small>
+<small>model = tf.keras.models.Sequential([</small>
+<small>    tf.keras.layers.Conv2D(64, (3,3), activation=&#39;relu&#39;, input_shape=(28, 28, 1)),</small>
+<small>    tf.keras.layers.MaxPooling2D(2, 2),</small>
+<small>    tf.keras.layers.Conv2D(64, (3,3), activation=&#39;relu&#39;),</small>
+<small>    tf.keras.layers.MaxPooling2D(2, 2),</small>
+<small></small>
+<small>    tf.keras.layers.Flatten(),</small>
+<small>    tf.keras.layers.Dense(128, activation=tf.nn.relu),</small>
+<small>    tf.keras.layers.Dense(10, activation=tf.nn.softmax)</small>
+<small>])</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>5(w3)-Learn more about convolutions:</a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
                                         <div class="textbox">
@@ -14647,6 +15079,17 @@ Implementing pooling layers</a><a> <small>(15.MLg_1c)</small></a></h6></span></h
                                                         Следующая строчка кода создаст слой пулинга. Мы выбрали MaxPooling2D, поскольку мы хотим брать максимальное значение. Мы говорим, что это будет пул 2х2, поэтому из каждых четырёх пикселов выживет набольшее значение, как было показано ранее. Мы затем добавим еще один свёрточный слой Conv2D и еще один слой MaxPooling2D, так что сеть сможет выучить ещё один набор свёрток поверх уже существующего, а затем — опять пулинг, чтобы уменьшить размер. Так к моменту, когда изображение доходит до слоя Flatten, чтобы попасть в Dense-слои, оно уже гораздо меньше, чем раньше. Изображение уменьшается в 4 раза, а затем ещё в 4 раза. Таким образом, его содержимое значительно упрощается, и цель в том, что свёртки выберут из изображения признаки, определяющие выход сети. Действительно полезный метод в модели — это метод model.summary(). Он позволяет проинспектировать слои модели, и просмотреть весь путь, который проходит изображение через свёртки. Вот что он выводит. Эта классная табличка показывает нам слои и некоторые сведения о них, включая размерность выхода. Стоит обращать внимание на столбец с размерностью выхода. Когда вы первый раз смотрите на него, его вид может немного сбивать с толку и казаться ошибочным. Во-первых, размер у данных 28х28, так почему же на выходе имеем 26х26? Ключ к пониманию здесь — вспомнить, что фильтр имеет размер 3х3. Рассмотрим, что происходит, когда вы начинаете сканирование изображения, начиная с левого верхнего угла. Так, на примере этого изображения собаки (справа) вы можете увидеть фрагмент в верхнем левом углу, увеличенный до пикселов. Вы не можете посчитать фильтр для пиксела в левом верхнем углу, потому что у него нет никаких соседей выше или слева от него. Аналогичным образом, для следующего от него пиксела правее — это также не сработает, т.к. у нет соседей выше него. Поэтому логично, что первый пиксел, для которого можно сделать расчёт — вот этот, потому что у него есть все восемь соседей, необходимые фильтру. И если подумать, это означает, что нельзя использовать поле шириной в один пиксель по периметру всего изображения, и потому результат свёртки будет на 2 пиксела меньше по оси Х, и на 2 пиксела меньше по оси Y. Если ваш фильтр имеет размерность 5х5, то по тем же причинам, результат будет на 4 пиксела меньше по оси Х, и на 4 пиксела меньше по оси Y. Таким образом, в случае фильтра 3х3, выходным для изображения 28х28 — будет 26х26. Мы удалили тот один пиксель по X и по Y с каждой стороны. Далее идёт первый из MaxPooling слоёв. Вспомните, что мы определили его как 2х2, что превращает 4 пиксела в один по X и по Y. Так что теперь наш выход сократился с 26х26, до 13х13. Свёртки будут дальше работать с ним, и конечно, мы опять теряем поле в 1 пиксел, и размер понижается до 11х11, мы добавляем ещё один MaxPooling 2х2, чтобы сжать изображение, и так снижаем размер изображений до 5х5. Наша полносвязная нейронная сеть остаётся такой же, как прежде, но теперь она принимает на вход изображения размерностью 5х5 вместо картинок 28х28. Но запомните — это не просто единственное сжатое до 5х5 изображение — вместо оригинального 28х28. Это ряд свёрток для каждого изображения, которые мы определили. В нашем случае —их 64. Таким образом, у нас есть 64 новых изображения размерностью 5х5, которые подаются на вход. Развернув их, мы получим 25 пикселов * 64 изображения = 1600 пикселов. Как видите, в новом развернутом слое содержится 1600 элементов, в отличие от 784, как было ранее. Это число зависит от параметров, которые мы устанавливаем, определяя двумерные свёрточные слои. Позже, когда вы будете экспериментировать, то увидите, как повлияет подстановка других значений количества свёрток, и, в частности, увидите, что произойдёт, если подать на вход сети меньше чем 784 пикселов. Обучение должно пойти быстрее, но есть ли точка оптимума, где результат более точный? Давайте переключимся на workbook и попробуем сделать это самостоятельно. <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -14728,6 +15171,59 @@ Implementing pooling layers</a><a> <small>(15.MLg_1c)</small></a></h6></span></h
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># next code</small>
+<small>model = tf.keras.models.Sequential([</small>
+<small>    tf.keras.layers.Conv2D(64, (3,3), activation=&#39;relu&#39;, input_shape=(28, 28, 1)),</small>
+<small>    tf.keras.layers.MaxPooling2D(2, 2),</small>
+<small>    tf.keras.layers.Conv2D(64, (3,3), activation=&#39;relu&#39;),</small>
+<small>    tf.keras.layers.MaxPooling2D(2, 2),</small>
+<small></small>
+<small>    tf.keras.layers.Flatten(),</small>
+<small>    tf.keras.layers.Dense(128, activation=tf.nn.relu),</small>
+<small>    tf.keras.layers.Dense(10, activation=tf.nn.softmax)</small>
+<small>])</small>
+<small></small>
+<small>Layer (type)                    Output Shape          Param # </small>
+<small>==========================================================</small>
+<small>conv2d_12         (Conv2D)      (None, 26, 26, 64)    640</small>
+<small>---------------------------------------------------------</small>
+<small>max_pooling2d_12  (MaxPooling   (None, 13, 13, 64)    0</small>
+<small>---------------------------------------------------------</small>
+<small>conv2d_13         (Conv2D)      (None, 11, 11, 64)    36928</small>
+<small>---------------------------------------------------------</small>
+<small>max_pooling2d_13  (MaxPooling   (None, 5, 5, 64)      0</small>
+<small>---------------------------------------------------------</small>
+<small>flatten_5         (Flatten)     (None, 1600)          0</small>
+<small>---------------------------------------------------------</small>
+<small>dense_10          (Dense)       (None, 128)           204928</small>
+<small>---------------------------------------------------------</small>
+<small>dense_11          (Dense)       (None, 10)            1290</small>
+<small>==========================================================</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>7(w3)-Getting hands-on, your first ConvNet:</a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
                                         <div class="textbox">
@@ -14802,6 +15298,17 @@ Improving the Fashion classifier with convolutions</a><a> <small>(15.MLg_1c)</sm
                                                           tf.keras.layers.Dense(10, activation=&#39;softmax&#39;) <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -14883,6 +15390,59 @@ Improving the Fashion classifier with convolutions</a><a> <small>(15.MLg_1c)</sm
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># Define the model</small>
+<small>model = tf.keras.models.Sequential([</small>
+<small>                                                         </small>
+<small>  # Add convolutions and max pooling</small>
+<small>  tf.keras.layers.Conv2D(32, (3,3), activation=&#39;relu&#39;, input_shape=(28, 28, 1)),</small>
+<small>  tf.keras.layers.MaxPooling2D(2, 2),</small>
+<small>  tf.keras.layers.Conv2D(32, (3,3), activation=&#39;relu&#39;),</small>
+<small>  tf.keras.layers.MaxPooling2D(2,2),</small>
+<small></small>
+<small>  # Add the same layers as before</small>
+<small>  tf.keras.layers.Flatten(),</small>
+<small>  tf.keras.layers.Dense(128, activation=&#39;relu&#39;),</small>
+<small>  tf.keras.layers.Dense(10, activation=&#39;softmax&#39;)</small>
+<small>])</small>
+<small></small>
+<small># Print the model summary</small>
+<small>model.summary()</small>
+<small></small>
+<small># Use same settings</small>
+<small>model.compile(optimizer=&#39;adam&#39;, loss=&#39;sparse_categorical_crossentropy&#39;, metrics=[&#39;accuracy&#39;])</small>
+<small></small>
+<small># Train the model</small>
+<small>print(f&#39;\nMODEL TRAINING:&#39;)</small>
+<small>model.fit(training_images, training_labels, epochs=5)</small>
+<small></small>
+<small># Evaluate on the test set</small>
+<small>print(f&#39;\nMODEL EVALUATION:&#39;)</small>
+<small>test_loss = model.evaluate(test_images, test_labels)</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>10(w3)-video6: 
 Walking through convolutions</a><a> <small>(15.MLg_1c)</small></a></h6></span></h4> <!-- rows names in sheets -->
@@ -15636,6 +16196,17 @@ Week 1 Wrap up</a><a> <small>(16.MLg_2c)</small></a></h6></span></h4> <!-- rows 
                                                         Когда вы будете готовы отправить, вы можете загрузить файлы для каждой части задания на вкладке «Мои материалы». <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -15718,6 +16289,60 @@ Week 1 Wrap up</a><a> <small>(16.MLg_2c)</small></a></h6></span></h4> <!-- rows 
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># file = &#34;c2_week1_Passigment.ipynb&#34;</small>
+<small></small>
+<small>Original cat&#39;s directory has 12500 images</small>
+<small>Original dog&#39;s directory has 12500 images</small>
+<small></small>
+<small>There are 11249 images of cats for training</small>
+<small>There are 11249 images of dogs for training</small>
+<small>There are 1250 images of cats for validation</small>
+<small>There are 1250 images of dogs for validation</small>
+<small></small>
+<small>train_generator = train_datagen.flow_from_directory(batch_size=150,),  Epoch 15/15</small>
+<small>                          1_.Conv2D(16,)  |  2_.Conv2D(32,)  |   3_.Conv2D(64,)  |  .Dense(256,)</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>accuracy:      |           0,98    (16)   | 0,00    (32)   | 0,00    (64)   | 0,00    (256)   |</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>val_accuracy: |           0,83    (00)   |  0,00    (00)   | 0,00    (00)   |  0,00    (00)   |</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small></small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>accuracy:      |           0,975   (16)   | 0,00    (16)   | 0,00    (16)   | 0,00    (256)   |</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>val_accuracy: |           0,8    (00)   |  0,00    (00)   | 0,00    (00)   |  0,00    (00)   |</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small></small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>accuracy:      |           0,962    (8)   | 0,00    (16)   | 0,00    (32)   | 0,00    (256)   |</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>val_accuracy: |           0,814    (00)   |  0,00    (00)   | 0,00    (00)   |  0,00    (00)   |</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>NEXT week_2
 </a><a> <small>(16.MLg_2c)</small></a></h6></span></h4> <!-- rows names in sheets -->
@@ -15978,6 +16603,17 @@ Week 1 Wrap up</a><a> <small>(16.MLg_2c)</small></a></h6></span></h4> <!-- rows 
                                                         - История обучения вашей модели (файл с расширением .pkl), которая будет использоваться для оценки точности вашей модели. <br><!-- list from rows in cells --> 
                                      <hr>
                                         <div class="textbox">
+                                                <style>
+    pre {
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+    code {
+        display: block; /* Отображать код как блочный элемент */
+        white-space: pre-wrap; /* Переносить текст на новую строку */
+        word-wrap: break-word; /* Переносить длинные слова */
+    }
+</style>
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h6 class="accordion-header">
@@ -16060,6 +16696,60 @@ Week 1 Wrap up</a><a> <small>(16.MLg_2c)</small></a></h6></span></h4> <!-- rows 
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
     </div>
   </div> -->
+<!-- FOR GPT -->
+<!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h6 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapse">
+        my func
+      </button>
+    </h6>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <strong>
+              <div class="dm-code-snippet light no-background no-background-mobile dm-normal-version" style="background-color:#abb8c3;" snippet-height="">
+                <script>hljs.initHighlightingOnLoad();</script>
+            <h5>
+              <pre>
+                <code class="language-python hljs">                      
+<small>!_!</small>
+<small># file = &#34;c2_week2_Passigment.ipynb&#34;</small>
+<small>Original cat&#39;s directory has 12500 images</small>
+<small>Original dog&#39;s directory has 12500 images</small>
+<small>There are 11249 images of cats for training</small>
+<small>There are 11249 images of dogs for training</small>
+<small>There are 1250 images of cats for validation</small>
+<small>There are 1250 images of dogs for validation</small>
+<small>train_generator = train_datagen.flow_from_directory(batch_size=_,),  Epoch 15/15</small>
+<small> accuracy;  | batch_size|1.Conv2D()|2.Conv2D()|3.Conv2D()|4.Conv2D()|5.Conv2D()|Dense()</small>
+<small>val_accur   |  T   V    |          |          |          |          |          |          | </small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,71; 0,75  |150   150  |  16      |   32     |  64      |   00     |   00     |  512    |</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,64; 0,65  |020   020  |  16      |   32     |  64      |   64     |   00     |  512    |+st</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,70; 0,66  |020   020  |  16      |   32     |  64      |   00     |   00     |  256    |+step(epoch, valid)</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,67; 0,74  |128   032  |  16      |   32     |  64      |   64     |   00     |  256    |+st</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,68; 0,66  |020   020  |  16      |   32     |  64      |   00     |   00     |  128    |+st</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,66; 0,60  |020   020  |  16      |   32     |  00      |   00     |   00     |  128    |+st</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,68; 0,70  |020   020  |  16      |   32     |  64      |   00     |   00     |  512    |+st</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,69; 0,71  |040   040  |  16      |   32     |  64      |   00     |   00     |  512    |+st</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+<small>0,65; 0,69  |020   020  |    8      |   16     |  32      |   00     |   00     |  256    |+st</small>
+<small>-----------------------------------------------------------------------------------------------------------------</small>
+   </code>
+              </pre>
+            </h5>
+            </strong>
+          </div>
+        </div>      
+  </div>
+</div>   -->
                                      <hr>
                             <h4><span style="color:blue;"><a>NEXT week_3
 </a><a> <small>(16.MLg_2c)</small></a></h6></span></h4> <!-- rows names in sheets -->
