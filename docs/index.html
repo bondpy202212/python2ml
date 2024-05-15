@@ -11529,8 +11529,8 @@ mse: 29.33, mae: 3.33 for forecast
     # Compute the MSE and MAE<br>
     print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())<br>
     print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())<br>
-    60.67146<br>
-    5.80936<br>
+    65.11<br>
+    6.25<br>
       </div>
       </div>
     </div>
@@ -11606,8 +11606,8 @@ plot_series(time_valid, (x_valid, results))
 # Compute the MSE and MAE
 print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())
 print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
-60.67146
-5.80936
+65.11
+6.25
 </code>
 </pre>
  -->
@@ -11679,8 +11679,8 @@ plot_series(time_valid, (x_valid, results))
 # Compute the MSE and MAE
 print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())
 print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
-60.67146
-5.80936
+65.11
+6.25
 </small></code>
 </pre>
 <!-- <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" > </link>
@@ -11755,8 +11755,8 @@ plot_series(time_valid, (x_valid, results))
 # Compute the MSE and MAE
 print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())
 print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
-60.67146
-5.80936
+65.11
+6.25
 </code>
   </pre>
 </h5> -->
@@ -11838,8 +11838,8 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
     # Compute the MSE and MAE<br>
     print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())<br>
     print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())<br>
-    72.04228<br>
-    6.2059126<br>
+    58.02<br>
+    5.48<br>
       </div>
       </div>
     </div>
@@ -11905,8 +11905,8 @@ plot_series(time_valid, (x_valid, results))
 # Compute the MSE and MAE
 print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())
 print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
-72.04228
-6.2059126
+58.02
+5.48
 </code>
 </pre>
  -->
@@ -11968,8 +11968,8 @@ plot_series(time_valid, (x_valid, results))
 # Compute the MSE and MAE
 print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())
 print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
-72.04228
-6.2059126
+58.02
+5.48
 </small></code>
 </pre>
 <!-- <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" > </link>
@@ -12034,8 +12034,8 @@ plot_series(time_valid, (x_valid, results))
 # Compute the MSE and MAE
 print(tf.keras.metrics.mean_squared_error(x_valid, results).numpy())
 print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
-72.04228
-6.2059126
+58.02
+5.48
 </code>
   </pre>
 </h5> -->
@@ -12140,7 +12140,7 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
     rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]<br>
     <br>
     mse, mae = compute_metrics(series_valid, rnn_forecast)<br>
-    mse: 29.84, mae: 3.25 for forecast<br>
+    mse: 28.74, mae: 3.21 for forecast<br>
     <br>
       </div>
       </div>
@@ -12227,7 +12227,7 @@ rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
 # Slize the forecast to get only the predictions for the validation set
 rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
 mse, mae = compute_metrics(series_valid, rnn_forecast)
-mse: 29.84, mae: 3.25 for forecast
+mse: 28.74, mae: 3.21 for forecast
 </code>
 </pre>
  -->
@@ -12309,7 +12309,7 @@ rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
 # Slize the forecast to get only the predictions for the validation set
 rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
 mse, mae = compute_metrics(series_valid, rnn_forecast)
-mse: 29.84, mae: 3.25 for forecast
+mse: 28.74, mae: 3.21 for forecast
 </small></code>
 </pre>
 <!-- <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" > </link>
@@ -12394,7 +12394,7 @@ rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
 # Slize the forecast to get only the predictions for the validation set
 rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
 mse, mae = compute_metrics(series_valid, rnn_forecast)
-mse: 29.84, mae: 3.25 for forecast
+mse: 28.74, mae: 3.21 for forecast
 </code>
   </pre>
 </h5> -->
