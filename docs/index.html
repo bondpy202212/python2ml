@@ -12471,7 +12471,7 @@ mse: 28.74, mae: 3.21 for forecast
       # Create batches of windows<br>
       dataset = dataset.batch(batch_size). prefetch(1)<br>
       return dataset<br>
-    <br>
+    train_set = windowed_dataset(x_train, window_size, batch_size, shuffle_buffer_size)<br>
     model = tf.keras.models.Sequential([<br>
         tf.keras.layers.Conv1D(filters=64, kernel_size=3,<br>
                                strides=1, padding=&#34;causal&#34;,<br>
@@ -12572,6 +12572,7 @@ def windowed_dataset(series, window_size, batch_size, shuffle_buffer):
   # Create batches of windows
   dataset = dataset.batch(batch_size). prefetch(1)
   return dataset
+train_set = windowed_dataset(x_train, window_size, batch_size, shuffle_buffer_size)
 model = tf.keras.models.Sequential([
     tf.keras.layers.Conv1D(filters=64, kernel_size=3,
                            strides=1, padding=&#34;causal&#34;,
@@ -12660,6 +12661,7 @@ def windowed_dataset(series, window_size, batch_size, shuffle_buffer):
   # Create batches of windows
   dataset = dataset.batch(batch_size). prefetch(1)
   return dataset
+train_set = windowed_dataset(x_train, window_size, batch_size, shuffle_buffer_size)
 model = tf.keras.models.Sequential([
     tf.keras.layers.Conv1D(filters=64, kernel_size=3,
                            strides=1, padding=&#34;causal&#34;,
@@ -12751,6 +12753,7 @@ def windowed_dataset(series, window_size, batch_size, shuffle_buffer):
   # Create batches of windows
   dataset = dataset.batch(batch_size). prefetch(1)
   return dataset
+train_set = windowed_dataset(x_train, window_size, batch_size, shuffle_buffer_size)
 model = tf.keras.models.Sequential([
     tf.keras.layers.Conv1D(filters=64, kernel_size=3,
                            strides=1, padding=&#34;causal&#34;,
