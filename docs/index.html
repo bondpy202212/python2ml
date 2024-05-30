@@ -538,20 +538,20 @@ def Week4 C3 &#34;Sequence models and literature&#34;:
     def Week1 C4 &#34;Sequences and Prediction&#34;:   |  &#34;&#34;<br>
       - C4_W1_Lab_1_time_series  |  &#34;trend, seasonality_pattern, seasonality, noise, autocorrelation, impulses, autocorrelation_impulses, Non-stationary Time Series&#34;<br>
       - C4_W1_Lab_2_forecasting   |  &#34;Naive Forecast mse=61,8, mae=5,9, Moving Average mse=106.6, mae=7.1, Differencing mse=53.7, mae=5.9, Smoothing mse=34.3, mae=4.6&#34;<br>
-      - C4W1_Assignment_time_series   |  &#34;mse: 19.58, mae: 2.60 for naive, mse: 65.79, mae: 4.30 for moving average, mse: 8.50, mae: 2.33 for moving average plus past, mse: 12.53, mae: 2.20 for moving average plus smooth past&#34;<br>
+      - C4W1_Assignment_time_series   |  &#34;mse:19.58, mae:2.60 for naive, mse:65.79, mae:4.30 for moving average, mse:8.50, mae:2.33 for moving average plus past, mse:12.53, mae:2.20 for moving average plus smooth past&#34;<br>
     def Week2 C4 &#34;Deep Neural Networks for Time Series&#34;:<br>
       - C4_W2_Lab_1_Preparing_Time_Series_features_and_labels  |  &#34;tf.data.Dataset.range(10); dataset.window(size=5, shift=1, drop_remainder=True), .flat_map(lambda window: window.batch(5)), .map(lambda window: (window[:-1], window[-1])), .shuffle(buffer_size=10), .batch(2).prefetch(1) &#34;<br>
-      - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse, mae: 46,7; 5,1&#34;<br>
-      - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse, mae: 45,7; 5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse, mae: 42,2; 4,8&#34;<br>
-      - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse: 29.33, mae: 3.33&#34;<br>
+      - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse,mae:46,7; 5,1&#34;<br>
+      - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse,mae:45,7;5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse,mae:42,2; 4,8&#34;<br>
+      - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse:29.33, mae:3.33&#34;<br>
     def Week3 C4 &#34;Recurrent Neural Networks for Time Series&#34;:<br>
-      - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse: 65.11, mae: 6.25&#34;<br>
-      - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse: 58.02, mae: 5.48&#34;<br>
-      - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse: 28.74, mae: 3.21, ! tar -czvf saved_model.tar.gz saved_model/&#34;<br>
+      - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse:65.11, mae:6.25&#34;<br>
+      - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse:58.02, mae:5.48&#34;<br>
+      - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse:28.74, mae:3.21, ! tar-czvf saved_model.tar.gz saved_model/&#34;<br>
     def Week1 C4 &#34;Real-world time series data&#34;:<br>
-      - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse: 46.32, mae: 5.23 (58,02, 5,8) &#34;<br>
-      - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;&#34;<br>
-      - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;&#34;<br>
+      - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse:46.32,mae:5.23(58,02; 5,8) &#34;<br>
+      - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;<br>
+      - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100,mae:14.62; epochs=40,.ExponentialDecay(),mae:14,99, other lr_schedule&#34;<br>
       - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;<br>
     <br>
       </div>
@@ -569,20 +569,20 @@ def Week4 C3 &#34;Sequence models and literature&#34;:
 def Week1 C4 &#34;Sequences and Prediction&#34;:   |  &#34;&#34;
   - C4_W1_Lab_1_time_series  |  &#34;trend, seasonality_pattern, seasonality, noise, autocorrelation, impulses, autocorrelation_impulses, Non-stationary Time Series&#34;
   - C4_W1_Lab_2_forecasting   |  &#34;Naive Forecast mse=61,8, mae=5,9, Moving Average mse=106.6, mae=7.1, Differencing mse=53.7, mae=5.9, Smoothing mse=34.3, mae=4.6&#34;
-  - C4W1_Assignment_time_series   |  &#34;mse: 19.58, mae: 2.60 for naive, mse: 65.79, mae: 4.30 for moving average, mse: 8.50, mae: 2.33 for moving average plus past, mse: 12.53, mae: 2.20 for moving average plus smooth past&#34;
+  - C4W1_Assignment_time_series   |  &#34;mse:19.58, mae:2.60 for naive, mse:65.79, mae:4.30 for moving average, mse:8.50, mae:2.33 for moving average plus past, mse:12.53, mae:2.20 for moving average plus smooth past&#34;
 def Week2 C4 &#34;Deep Neural Networks for Time Series&#34;:
   - C4_W2_Lab_1_Preparing_Time_Series_features_and_labels  |  &#34;tf.data.Dataset.range(10); dataset.window(size=5, shift=1, drop_remainder=True), .flat_map(lambda window: window.batch(5)), .map(lambda window: (window[:-1], window[-1])), .shuffle(buffer_size=10), .batch(2).prefetch(1) &#34;
-  - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse, mae: 46,7; 5,1&#34;
-  - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse, mae: 45,7; 5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse, mae: 42,2; 4,8&#34;
-  - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse: 29.33, mae: 3.33&#34;
+  - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse,mae:46,7; 5,1&#34;
+  - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse,mae:45,7;5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse,mae:42,2; 4,8&#34;
+  - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse:29.33, mae:3.33&#34;
 def Week3 C4 &#34;Recurrent Neural Networks for Time Series&#34;:
-  - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse: 65.11, mae: 6.25&#34;
-  - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse: 58.02, mae: 5.48&#34;
-  - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse: 28.74, mae: 3.21, ! tar -czvf saved_model.tar.gz saved_model/&#34;
+  - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse:65.11, mae:6.25&#34;
+  - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse:58.02, mae:5.48&#34;
+  - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse:28.74, mae:3.21, ! tar-czvf saved_model.tar.gz saved_model/&#34;
 def Week1 C4 &#34;Real-world time series data&#34;:
-  - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse: 46.32, mae: 5.23 (58,02, 5,8) &#34;
-  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;&#34;
-  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;&#34;
+  - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse:46.32,mae:5.23(58,02; 5,8) &#34;
+  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;
+  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100,mae:14.62; epochs=40,.ExponentialDecay(),mae:14,99, other lr_schedule&#34;
   - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;
 </code>
 </pre>
@@ -595,20 +595,20 @@ def Week1 C4 &#34;Real-world time series data&#34;:
 def Week1 C4 &#34;Sequences and Prediction&#34;:   |  &#34;&#34;
   - C4_W1_Lab_1_time_series  |  &#34;trend, seasonality_pattern, seasonality, noise, autocorrelation, impulses, autocorrelation_impulses, Non-stationary Time Series&#34;
   - C4_W1_Lab_2_forecasting   |  &#34;Naive Forecast mse=61,8, mae=5,9, Moving Average mse=106.6, mae=7.1, Differencing mse=53.7, mae=5.9, Smoothing mse=34.3, mae=4.6&#34;
-  - C4W1_Assignment_time_series   |  &#34;mse: 19.58, mae: 2.60 for naive, mse: 65.79, mae: 4.30 for moving average, mse: 8.50, mae: 2.33 for moving average plus past, mse: 12.53, mae: 2.20 for moving average plus smooth past&#34;
+  - C4W1_Assignment_time_series   |  &#34;mse:19.58, mae:2.60 for naive, mse:65.79, mae:4.30 for moving average, mse:8.50, mae:2.33 for moving average plus past, mse:12.53, mae:2.20 for moving average plus smooth past&#34;
 def Week2 C4 &#34;Deep Neural Networks for Time Series&#34;:
   - C4_W2_Lab_1_Preparing_Time_Series_features_and_labels  |  &#34;tf.data.Dataset.range(10); dataset.window(size=5, shift=1, drop_remainder=True), .flat_map(lambda window: window.batch(5)), .map(lambda window: (window[:-1], window[-1])), .shuffle(buffer_size=10), .batch(2).prefetch(1) &#34;
-  - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse, mae: 46,7; 5,1&#34;
-  - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse, mae: 45,7; 5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse, mae: 42,2; 4,8&#34;
-  - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse: 29.33, mae: 3.33&#34;
+  - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse,mae:46,7; 5,1&#34;
+  - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse,mae:45,7;5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse,mae:42,2; 4,8&#34;
+  - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse:29.33, mae:3.33&#34;
 def Week3 C4 &#34;Recurrent Neural Networks for Time Series&#34;:
-  - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse: 65.11, mae: 6.25&#34;
-  - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse: 58.02, mae: 5.48&#34;
-  - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse: 28.74, mae: 3.21, ! tar -czvf saved_model.tar.gz saved_model/&#34;
+  - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse:65.11, mae:6.25&#34;
+  - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse:58.02, mae:5.48&#34;
+  - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse:28.74, mae:3.21, ! tar-czvf saved_model.tar.gz saved_model/&#34;
 def Week1 C4 &#34;Real-world time series data&#34;:
-  - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse: 46.32, mae: 5.23 (58,02, 5,8) &#34;
-  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;&#34;
-  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;&#34;
+  - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse:46.32,mae:5.23(58,02; 5,8) &#34;
+  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;
+  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100,mae:14.62; epochs=40,.ExponentialDecay(),mae:14,99, other lr_schedule&#34;
   - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;
 </small></code>
 </pre>
@@ -624,20 +624,20 @@ def Week1 C4 &#34;Real-world time series data&#34;:
 def Week1 C4 &#34;Sequences and Prediction&#34;:   |  &#34;&#34;
   - C4_W1_Lab_1_time_series  |  &#34;trend, seasonality_pattern, seasonality, noise, autocorrelation, impulses, autocorrelation_impulses, Non-stationary Time Series&#34;
   - C4_W1_Lab_2_forecasting   |  &#34;Naive Forecast mse=61,8, mae=5,9, Moving Average mse=106.6, mae=7.1, Differencing mse=53.7, mae=5.9, Smoothing mse=34.3, mae=4.6&#34;
-  - C4W1_Assignment_time_series   |  &#34;mse: 19.58, mae: 2.60 for naive, mse: 65.79, mae: 4.30 for moving average, mse: 8.50, mae: 2.33 for moving average plus past, mse: 12.53, mae: 2.20 for moving average plus smooth past&#34;
+  - C4W1_Assignment_time_series   |  &#34;mse:19.58, mae:2.60 for naive, mse:65.79, mae:4.30 for moving average, mse:8.50, mae:2.33 for moving average plus past, mse:12.53, mae:2.20 for moving average plus smooth past&#34;
 def Week2 C4 &#34;Deep Neural Networks for Time Series&#34;:
   - C4_W2_Lab_1_Preparing_Time_Series_features_and_labels  |  &#34;tf.data.Dataset.range(10); dataset.window(size=5, shift=1, drop_remainder=True), .flat_map(lambda window: window.batch(5)), .map(lambda window: (window[:-1], window[-1])), .shuffle(buffer_size=10), .batch(2).prefetch(1) &#34;
-  - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse, mae: 46,7; 5,1&#34;
-  - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse, mae: 45,7; 5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse, mae: 42,2; 4,8&#34;
-  - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse: 29.33, mae: 3.33&#34;
+  - C4_W2_Lab_2_single_layer_NN(Time series)  |  &#34;dataset.batch(batch_size).prefetch(1); tf.keras.layers.Dense(1, input_shape=[window_size]); tf.keras.models.Sequential([l0]); model.fit(dataset, epochs=100);  mse,mae:46,7; 5,1&#34;
+  - C4_W2_Lab_3_deep_NN(Time series)  |  &#34;tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(10, ...); tf.keras.layers.Dense(1),  mse,mae:45,7;5,01; tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9); mse,mae:42,2; 4,8&#34;
+  - C4W2_Assignment_DNN(Time series):   |  &#34;plot_series(), generate_time_series(), @dataclass, train_val_split(), windowed_dataset(), create_model(), compute_metrics(), generate_forecast(), mse:29.33, mae:3.33&#34;
 def Week3 C4 &#34;Recurrent Neural Networks for Time Series&#34;:
-  - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse: 65.11, mae: 6.25&#34;
-  - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse: 58.02, mae: 5.48&#34;
-  - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse: 28.74, mae: 3.21, ! tar -czvf saved_model.tar.gz saved_model/&#34;
+  - C4_W3_Lab_1_RNN_for_time_series   |  &#34;tf.keras.layers.Lambda(), .SimpleRNN(), .SimpleRNN(), .Dense(1), .Lambda(), learning_rate, mse:65.11, mae:6.25&#34;
+  - C4_W3_Lab_2_LSTM_for_time_series   |  &#34;.clear_session(), .Lambda(), .Bidirectional(tf.keras.layers.LSTM(), .Bidirectional(.LSTM(), .Dense(1), .Lambda(), .compile(loss=tf.keras.losses.Huber(), learning_rate, mse:58.02, mae:5.48&#34;
+  - C4W3_Assignment RNNs(time series)   |  &#34;.Lambda(), .Bidirectional(), .LSTM(32), create_uncompiled_model(), adjust_learning_rate(), create_model(), compute_metrics(), model_forecast()_ achieve an MAE of 4.5 or less, mse:28.74, mae:3.21, ! tar-czvf saved_model.tar.gz saved_model/&#34;
 def Week1 C4 &#34;Real-world time series data&#34;:
-  - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse: 46.32, mae: 5.23 (58,02, 5,8) &#34;
-  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;&#34;
-  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;&#34;
+  - C4_W4_Lab_1_Convolutions_with_LSTM   |  &#34;init_weights = model.get_weights(), tf.keras.backend.clear_session(), model.set_weights(init_weights), .Conv1D(), .LSTM(64), .LSTM(64), .Lambda(); mse:46.32,mae:5.23(58,02; 5,8) &#34;
+  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;
+  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100,mae:14.62; epochs=40,.ExponentialDecay(),mae:14,99, other lr_schedule&#34;
   - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;
 </code>
   </pre>
@@ -656,8 +656,8 @@ def Week1 C4 &#34;Real-world time series data&#34;:
       <div class="accordion-body">
       <div class='text'> 
     !_!!<br>
-      - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae: 14,93&#34;<br>
-      - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae: 14.62; epochs=40, .ExponentialDecay(), mae: 14,99, other lr_schedule&#34;<br>
+      - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;<br>
+      - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae:14.62; epochs=40, .ExponentialDecay(), mae:14,99, other lr_schedule&#34;<br>
       - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;<br>
       </div>
       </div>
@@ -668,16 +668,16 @@ def Week1 C4 &#34;Real-world time series data&#34;:
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <!-- <pre>
 <code class="language-python hljs">
-  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae: 14,93&#34;
-  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae: 14.62; epochs=40, .ExponentialDecay(), mae: 14,99, other lr_schedule&#34;
+  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;
+  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae:14.62; epochs=40, .ExponentialDecay(), mae:14,99, other lr_schedule&#34;
   - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;
 </code>
 </pre>
  -->
 <pre>
 <code class="language-python hljs"><small>
-  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae: 14,93&#34;
-  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae: 14.62; epochs=40, .ExponentialDecay(), mae: 14,99, other lr_schedule&#34;
+  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;
+  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae:14.62; epochs=40, .ExponentialDecay(), mae:14,99, other lr_schedule&#34;
   - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;
 </small></code>
 </pre>
@@ -687,8 +687,8 @@ def Week1 C4 &#34;Real-world time series data&#34;:
 <!-- <h5>
   <pre>
     <code class="language-python hljs">
-  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae: 14,93&#34;
-  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae: 14.62; epochs=40, .ExponentialDecay(), mae: 14,99, other lr_schedule&#34;
+  - C4_W4_Lab_2_Sunspots_DNN_Kaggle   |  &#34;.LearningRateScheduler(), .clear_session(), .Dense(30), .Dense(10), .Dense(1); model_forecast(): for predict; mae:14,93&#34;
+  - C4_W4_Lab_3_Sunspots_CNN_RNN_DNN   |  &#34;windowed_dataset(): for tuples features, labels; .Conv1D(), .LSTM(64), .LSTM(64), .Dense(30), .Dense(10), .Dense(1), .Lambda(), epochs=100, mae:14.62; epochs=40, .ExponentialDecay(), mae:14,99, other lr_schedule&#34;
   - C4W4_Assignment_min_temp_Melbourne   |  &#34;&#34;
 </code>
   </pre>
