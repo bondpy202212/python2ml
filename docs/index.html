@@ -13251,6 +13251,337 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
 </h5> -->
                                         </div>
                                      <hr>
+                                        <div class="textbox">
+                                                <!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        ...text
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      <div class='text'> 
+    !_!!<br>
+    C4W4_Assignment_min_temp_Melbourne.ipynb<br>
+    ---------------------------------------------------------------<br>
+    @dataclass<br>
+    class G:<br>
+        TEMPERATURES_CSV = &#39;./data/daily-min-temperatures.csv&#39;<br>
+        times, temperatures = parse_data_from_file(TEMPERATURES_CSV)<br>
+        TIME = np.array(times)<br>
+        SERIES = np.array(temperatures)<br>
+        SPLIT_TIME = 2500<br>
+        WINDOW_SIZE = 64<br>
+        BATCH_SIZE = 32<br>
+        SHUFFLE_BUFFER_SIZE = 1000<br>
+    def windowed_dataset(series, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE):<br>
+        ds = tf.data.Dataset.from_tensor_slices(series)<br>
+        ds = ds.window(window_size + 1, shift=1, drop_remainder=True)<br>
+        ds = ds.flat_map(lambda w: w.batch(window_size + 1))<br>
+        ds = ds.shuffle(shuffle_buffer)<br>
+        ds = ds.map(lambda w: (w[:-1], w[-1]))<br>
+        ds = ds.batch(batch_size).prefetch(1)<br>
+        return ds<br>
+    train_set = windowed_dataset(series_train, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE)<br>
+    def create_uncompiled_model():<br>
+        model = tf.keras.models.Sequential([<br>
+            tf.keras.layers.Conv1D(filters=64,<br>
+                                   kernel_size=3,<br>
+                                  strides=1,<br>
+                                  activation=&#34;relu&#34;,<br>
+                                  padding=&#34;causal&#34;,<br>
+                                  input_shape=[G.WINDOW_SIZE, 1]),<br>
+            tf.keras.layers.LSTM(64, return_sequences=True),<br>
+            tf.keras.layers.LSTM(64),<br>
+            tf.keras.layers.Dense(30, activation=&#34;relu&#34;),<br>
+            tf.keras.layers.Dense(10, activation=&#34;relu&#34;),<br>
+            tf.keras.layers.Dense(5, activation=&#34;relu&#34;),<br>
+            tf.keras.layers.Dense(1)    ])<br>
+        return model<br>
+    def adjust_learning_rate(dataset):<br>
+        model = create_uncompiled_model()<br>
+        lr_schedule = tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-4 * 10**(epoch / 20))<br>
+        optimizer = tf.keras.optimizers.SGD(momentum=0.9)<br>
+        model.compile(loss=tf.keras.losses.Huber(),<br>
+                      optimizer=optimizer,<br>
+                      metrics=[&#34;mae&#34;])<br>
+        history = model.fit(dataset, epochs=100, callbacks=[lr_schedule])<br>
+        return history<br>
+    lr_history = adjust_learning_rate(train_set)<br>
+    def create_model():<br>
+        model = create_uncompiled_model()<br>
+        learning_rate = 1e-3<br>
+        optimizer = tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9)<br>
+        model.compile(loss=tf.keras.losses.Huber(),<br>
+                      optimizer=optimizer,<br>
+                      metrics=[&#34;mae&#34;])<br>
+        return model<br>
+    model = create_model()<br>
+    history = model.fit(train_set, epochs=50)<br>
+    def compute_metrics(true_series, forecast):<br>
+        mse = tf.keras.metrics.mean_squared_error(true_series, forecast).numpy()<br>
+        mae = tf.keras.metrics.mean_absolute_error(true_series, forecast).numpy()<br>
+        return mse, mae<br>
+    def model_forecast(model, series, window_size):<br>
+        ds = tf.data.Dataset.from_tensor_slices(series)<br>
+        ds = ds.window(window_size, shift=1, drop_remainder=True)<br>
+        ds = ds.flat_map(lambda w: w.batch(window_size))<br>
+        ds = ds.batch(32).prefetch(1)<br>
+        forecast = model.predict(ds)<br>
+        return forecast<br>
+    # Compute the forecast for all the series<br>
+    rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()<br>
+    # Slice the forecast to get only the predictions for the validation set<br>
+    rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]<br>
+    mse, mae = compute_metrics(series_valid, rnn_forecast)<br>
+    print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)<br>
+      </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+                                                <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" ></link>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<!-- <pre>
+<code class="language-python hljs">
+C4W4_Assignment_min_temp_Melbourne.ipynb
+---------------------------------------------------------------
+@dataclass
+class G:
+    TEMPERATURES_CSV = &#39;./data/daily-min-temperatures.csv&#39;
+    times, temperatures = parse_data_from_file(TEMPERATURES_CSV)
+    TIME = np.array(times)
+    SERIES = np.array(temperatures)
+    SPLIT_TIME = 2500
+    WINDOW_SIZE = 64
+    BATCH_SIZE = 32
+    SHUFFLE_BUFFER_SIZE = 1000
+def windowed_dataset(series, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE):
+    ds = tf.data.Dataset.from_tensor_slices(series)
+    ds = ds.window(window_size + 1, shift=1, drop_remainder=True)
+    ds = ds.flat_map(lambda w: w.batch(window_size + 1))
+    ds = ds.shuffle(shuffle_buffer)
+    ds = ds.map(lambda w: (w[:-1], w[-1]))
+    ds = ds.batch(batch_size).prefetch(1)
+    return ds
+train_set = windowed_dataset(series_train, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE)
+def create_uncompiled_model():
+    model = tf.keras.models.Sequential([
+        tf.keras.layers.Conv1D(filters=64,
+                               kernel_size=3,
+                              strides=1,
+                              activation=&#34;relu&#34;,
+                              padding=&#34;causal&#34;,
+                              input_shape=[G.WINDOW_SIZE, 1]),
+        tf.keras.layers.LSTM(64, return_sequences=True),
+        tf.keras.layers.LSTM(64),
+        tf.keras.layers.Dense(30, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(10, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(5, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(1)    ])
+    return model
+def adjust_learning_rate(dataset):
+    model = create_uncompiled_model()
+    lr_schedule = tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-4 * 10**(epoch / 20))
+    optimizer = tf.keras.optimizers.SGD(momentum=0.9)
+    model.compile(loss=tf.keras.losses.Huber(),
+                  optimizer=optimizer,
+                  metrics=[&#34;mae&#34;])
+    history = model.fit(dataset, epochs=100, callbacks=[lr_schedule])
+    return history
+lr_history = adjust_learning_rate(train_set)
+def create_model():
+    model = create_uncompiled_model()
+    learning_rate = 1e-3
+    optimizer = tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9)
+    model.compile(loss=tf.keras.losses.Huber(),
+                  optimizer=optimizer,
+                  metrics=[&#34;mae&#34;])
+    return model
+model = create_model()
+history = model.fit(train_set, epochs=50)
+def compute_metrics(true_series, forecast):
+    mse = tf.keras.metrics.mean_squared_error(true_series, forecast).numpy()
+    mae = tf.keras.metrics.mean_absolute_error(true_series, forecast).numpy()
+    return mse, mae
+def model_forecast(model, series, window_size):
+    ds = tf.data.Dataset.from_tensor_slices(series)
+    ds = ds.window(window_size, shift=1, drop_remainder=True)
+    ds = ds.flat_map(lambda w: w.batch(window_size))
+    ds = ds.batch(32).prefetch(1)
+    forecast = model.predict(ds)
+    return forecast
+# Compute the forecast for all the series
+rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
+# Slice the forecast to get only the predictions for the validation set
+rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
+mse, mae = compute_metrics(series_valid, rnn_forecast)
+print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)
+</code>
+</pre>
+ -->
+<pre>
+<code class="language-python hljs"><small>
+C4W4_Assignment_min_temp_Melbourne.ipynb
+---------------------------------------------------------------
+@dataclass
+class G:
+    TEMPERATURES_CSV = &#39;./data/daily-min-temperatures.csv&#39;
+    times, temperatures = parse_data_from_file(TEMPERATURES_CSV)
+    TIME = np.array(times)
+    SERIES = np.array(temperatures)
+    SPLIT_TIME = 2500
+    WINDOW_SIZE = 64
+    BATCH_SIZE = 32
+    SHUFFLE_BUFFER_SIZE = 1000
+def windowed_dataset(series, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE):
+    ds = tf.data.Dataset.from_tensor_slices(series)
+    ds = ds.window(window_size + 1, shift=1, drop_remainder=True)
+    ds = ds.flat_map(lambda w: w.batch(window_size + 1))
+    ds = ds.shuffle(shuffle_buffer)
+    ds = ds.map(lambda w: (w[:-1], w[-1]))
+    ds = ds.batch(batch_size).prefetch(1)
+    return ds
+train_set = windowed_dataset(series_train, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE)
+def create_uncompiled_model():
+    model = tf.keras.models.Sequential([
+        tf.keras.layers.Conv1D(filters=64,
+                               kernel_size=3,
+                              strides=1,
+                              activation=&#34;relu&#34;,
+                              padding=&#34;causal&#34;,
+                              input_shape=[G.WINDOW_SIZE, 1]),
+        tf.keras.layers.LSTM(64, return_sequences=True),
+        tf.keras.layers.LSTM(64),
+        tf.keras.layers.Dense(30, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(10, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(5, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(1)    ])
+    return model
+def adjust_learning_rate(dataset):
+    model = create_uncompiled_model()
+    lr_schedule = tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-4 * 10**(epoch / 20))
+    optimizer = tf.keras.optimizers.SGD(momentum=0.9)
+    model.compile(loss=tf.keras.losses.Huber(),
+                  optimizer=optimizer,
+                  metrics=[&#34;mae&#34;])
+    history = model.fit(dataset, epochs=100, callbacks=[lr_schedule])
+    return history
+lr_history = adjust_learning_rate(train_set)
+def create_model():
+    model = create_uncompiled_model()
+    learning_rate = 1e-3
+    optimizer = tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9)
+    model.compile(loss=tf.keras.losses.Huber(),
+                  optimizer=optimizer,
+                  metrics=[&#34;mae&#34;])
+    return model
+model = create_model()
+history = model.fit(train_set, epochs=50)
+def compute_metrics(true_series, forecast):
+    mse = tf.keras.metrics.mean_squared_error(true_series, forecast).numpy()
+    mae = tf.keras.metrics.mean_absolute_error(true_series, forecast).numpy()
+    return mse, mae
+def model_forecast(model, series, window_size):
+    ds = tf.data.Dataset.from_tensor_slices(series)
+    ds = ds.window(window_size, shift=1, drop_remainder=True)
+    ds = ds.flat_map(lambda w: w.batch(window_size))
+    ds = ds.batch(32).prefetch(1)
+    forecast = model.predict(ds)
+    return forecast
+# Compute the forecast for all the series
+rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
+# Slice the forecast to get only the predictions for the validation set
+rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
+mse, mae = compute_metrics(series_valid, rnn_forecast)
+print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)
+</small></code>
+</pre>
+<!-- <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" > </link>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script> -->
+<!-- <script>hljs.initHighlightingOnLoad();</script> -->
+<!-- <h5>
+  <pre>
+    <code class="language-python hljs">
+C4W4_Assignment_min_temp_Melbourne.ipynb
+---------------------------------------------------------------
+@dataclass
+class G:
+    TEMPERATURES_CSV = &#39;./data/daily-min-temperatures.csv&#39;
+    times, temperatures = parse_data_from_file(TEMPERATURES_CSV)
+    TIME = np.array(times)
+    SERIES = np.array(temperatures)
+    SPLIT_TIME = 2500
+    WINDOW_SIZE = 64
+    BATCH_SIZE = 32
+    SHUFFLE_BUFFER_SIZE = 1000
+def windowed_dataset(series, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE):
+    ds = tf.data.Dataset.from_tensor_slices(series)
+    ds = ds.window(window_size + 1, shift=1, drop_remainder=True)
+    ds = ds.flat_map(lambda w: w.batch(window_size + 1))
+    ds = ds.shuffle(shuffle_buffer)
+    ds = ds.map(lambda w: (w[:-1], w[-1]))
+    ds = ds.batch(batch_size).prefetch(1)
+    return ds
+train_set = windowed_dataset(series_train, window_size=G.WINDOW_SIZE, batch_size=G.BATCH_SIZE, shuffle_buffer=G.SHUFFLE_BUFFER_SIZE)
+def create_uncompiled_model():
+    model = tf.keras.models.Sequential([
+        tf.keras.layers.Conv1D(filters=64,
+                               kernel_size=3,
+                              strides=1,
+                              activation=&#34;relu&#34;,
+                              padding=&#34;causal&#34;,
+                              input_shape=[G.WINDOW_SIZE, 1]),
+        tf.keras.layers.LSTM(64, return_sequences=True),
+        tf.keras.layers.LSTM(64),
+        tf.keras.layers.Dense(30, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(10, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(5, activation=&#34;relu&#34;),
+        tf.keras.layers.Dense(1)    ])
+    return model
+def adjust_learning_rate(dataset):
+    model = create_uncompiled_model()
+    lr_schedule = tf.keras.callbacks.LearningRateScheduler(lambda epoch: 1e-4 * 10**(epoch / 20))
+    optimizer = tf.keras.optimizers.SGD(momentum=0.9)
+    model.compile(loss=tf.keras.losses.Huber(),
+                  optimizer=optimizer,
+                  metrics=[&#34;mae&#34;])
+    history = model.fit(dataset, epochs=100, callbacks=[lr_schedule])
+    return history
+lr_history = adjust_learning_rate(train_set)
+def create_model():
+    model = create_uncompiled_model()
+    learning_rate = 1e-3
+    optimizer = tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=0.9)
+    model.compile(loss=tf.keras.losses.Huber(),
+                  optimizer=optimizer,
+                  metrics=[&#34;mae&#34;])
+    return model
+model = create_model()
+history = model.fit(train_set, epochs=50)
+def compute_metrics(true_series, forecast):
+    mse = tf.keras.metrics.mean_squared_error(true_series, forecast).numpy()
+    mae = tf.keras.metrics.mean_absolute_error(true_series, forecast).numpy()
+    return mse, mae
+def model_forecast(model, series, window_size):
+    ds = tf.data.Dataset.from_tensor_slices(series)
+    ds = ds.window(window_size, shift=1, drop_remainder=True)
+    ds = ds.flat_map(lambda w: w.batch(window_size))
+    ds = ds.batch(32).prefetch(1)
+    forecast = model.predict(ds)
+    return forecast
+# Compute the forecast for all the series
+rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
+# Slice the forecast to get only the predictions for the validation set
+rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
+mse, mae = compute_metrics(series_valid, rnn_forecast)
+print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)
+</code>
+  </pre>
+</h5> -->
+                                        </div>
+                                     <hr>
                             <h4><span style="color:blue;"><a>For resume, profession ML
 </a><a> <small>(13.MLg_title)</small></a></h6></span></h4> <!-- rows names in sheets -->
                                         <div class="textbox">
