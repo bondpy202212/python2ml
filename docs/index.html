@@ -13336,6 +13336,7 @@ print(tf.keras.metrics.mean_absolute_error(x_valid, results).numpy())
     rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]<br>
     mse, mae = compute_metrics(series_valid, rnn_forecast)<br>
     print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)<br>
+    mse: 5.66, mae: 1.86 <br>
       </div>
       </div>
     </div>
@@ -13418,6 +13419,7 @@ rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
 rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
 mse, mae = compute_metrics(series_valid, rnn_forecast)
 print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)
+mse: 5.66, mae: 1.86 
 </code>
 </pre>
  -->
@@ -13496,6 +13498,7 @@ rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
 rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
 mse, mae = compute_metrics(series_valid, rnn_forecast)
 print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)
+mse: 5.66, mae: 1.86 
 </small></code>
 </pre>
 <!-- <link     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css" rel="stylesheet" > </link>
@@ -13577,6 +13580,7 @@ rnn_forecast = model_forecast(model, G.SERIES, G.WINDOW_SIZE).squeeze()
 rnn_forecast = rnn_forecast[G.SPLIT_TIME - G.WINDOW_SIZE:-1]
 mse, mae = compute_metrics(series_valid, rnn_forecast)
 print(f&#34;mse: {mse:.2f}, mae: {mae:.2f} for forecast&#34;)
+mse: 5.66, mae: 1.86 
 </code>
   </pre>
 </h5> -->
