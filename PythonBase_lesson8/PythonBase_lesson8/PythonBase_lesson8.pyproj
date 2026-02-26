@@ -1,0 +1,124 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>12ec3342-aa84-417e-b914-a28d1edaf55e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>a24_wreateandread_dictionary.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonBase_lesson8</Name>
+    <RootNamespace>PythonBase_lesson8</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="a10_read_example7_txt_bin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a11_read_example7_bin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a12_javascript_object_natation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a13_deserialization_example12Json.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a14_jsonmethod_dumps_loads.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a15_module_pickle_for_binary_data.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a16_for_a15.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a17_read_example16_pkl.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a18_binary_strings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a18_HW_classStore.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a19_HW_objectStore_a18.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a1_open_and_read_txt.py" />
+    <Compile Include="a20_HW_random_numbers_to_txt.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a21_HW_read_txt.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a22_HW_wreating_bynary.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a23_HW_reading_binary_file.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a24_wreateandread_dictionary.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a2_context_manager_for_open.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a3_fileIO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a4_open_file_with.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a5_open_this_file.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a6_open_example5txt.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a7_open_example7txt.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a8_tell_seek.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="a9_binary_file.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\example1.txt" />
+    <Content Include="data\example12.json" />
+    <Content Include="data\example16.pkl" />
+    <Content Include="data\example5.txt" />
+    <Content Include="data\example6.txt" />
+    <Content Include="data\example7.bin" />
+    <Content Include="data\example7.txt" />
+    <Content Include="data\hw_18.pkl" />
+    <Content Include="data\hw_18_2.json" />
+    <Content Include="data\hw_20.txt" />
+    <Content Include="data\hw_22.bin" />
+    <Content Include="data\hw_24_examp_dict.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

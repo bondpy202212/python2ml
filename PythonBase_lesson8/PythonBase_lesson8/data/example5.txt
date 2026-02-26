@@ -1,0 +1,9 @@
+first line
++ inserted_line
++ inserted_line
++ inserted_line
++ inserted_line
++ inserted_line
++ inserted_line
+second line
+third line
