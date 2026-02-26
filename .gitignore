@@ -1,8 +1,15 @@
 README.md
+<<<<<<< HEAD
 # readweb.py
 # readwebML.py
 # run_indextoWebPy0.bat
 # run_indextoWebPy01.bat
+=======
+readweb.py
+readwebML.py
+run_indextoWebPy0.bat
+run_indextoWebPy01.bat
+>>>>>>> d6f7984e73fa0d2e71da759b536b3b74bc1c28c1
 
 env/
 env/*
